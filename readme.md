@@ -1,6 +1,9 @@
 # 🎵 Music Player - Full Stack Journey
 
+
 Este é um projeto de um reprodutor de música responsivo, desenvolvido como parte da minha migração para o desenvolvimento Full Stack. O foco principal foi o domínio de manipulação de DOM, gerenciamento de estados com JavaScript e estilização com CSS.
+
+
 
 ## 🚀 Tecnologias Utilizadas
 
