@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Music Player</title>
+</head>
+<body>
+    <audio id="audio-player" src="assets/sound/lost-in-city-lights-145038.mp3"></audio>
+    <div class="main-player">
+
+        <div class="header-player">
+            <img class="cover" src="assets/images/cover-1.jpg" alt="">
+            <p class="title">Lost in the city lights</p>
+            <p class="author">Cosmo Sheldrake</p>
+        </div>
+
+        <div class="progress-container">
+            <div class="timer">
+                <span id="current-time">00:00</span>
+                <span id="duration">00:00</span>
+            </div>
+            <input type="range" class="progress-bar" value="0" max="100">
+
+        </div>
+
+        <div class="player-control">
+            <button class="previous">
+                <img src="assets/images/Stop_and_play_fill-reverse.svg" alt="">
+            </button>
+            <button class="play">
+                <img src="assets/images/Play_fill.svg" alt="">
+
+            </button>
+            <button class="next">
+                <img src="assets/images/Stop_and_play_fill.svg" alt="">
+            </button>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

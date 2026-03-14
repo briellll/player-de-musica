@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+ height: 100vh;
+ background-image: url('assets/images/gradient-bg.jpg');
+ background-size: cover;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+}
+
+.main-player {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #21293699;
+    padding: 20px;
+    border-radius: 18px;
+    backdrop-filter: blur(15px);
+}
+
+.cover {
+    border-radius: 18px;
+    margin-bottom: 12px;
+}
+
+.title {
+    font-size: 16px;
+    color: #E5E7EB;
+    font-weight: 600;
+}
+
+.author {
+    color: #4D5562;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.progress-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.progress-bar {
+    appearance: none;
+    border-radius: 4px;
+    height: 4px;
+    cursor: pointer;
+    margin-top: 3px;
+}
+
+.progress-bar::-webkit-slider-thumb{
+    width: 12px;
+    height: 12px;
+    appearance: none;
+    background: #C93B76;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(201, 59, 118, 0.5);
+}
+
+.progress-bar::-webkit-slider-thumb:hover{
+    transform: scale(1.1);
+}
+
+.timer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    margin: 0px 2px;
+    color: #4D5562;
+}
+
+
+.player-control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.previous {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.previous:hover{
+    transform: scale(1.1);
+}
+
+.play {
+    background-color: #C93B76;
+    border: none;
+    border-radius: 50%;
+    filter: drop-shadow(0px 8px 16px rgba(201, 59, 118, 0.25));
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    transition: transform 0.5s;
+}
+
+.play:hover{
+    transform: scale(1.1);
+}
+
+.next {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.next:hover{
+    transform: scale(1.1);
+}
+
+.hide {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
