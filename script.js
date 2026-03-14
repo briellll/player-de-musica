@@ -5,9 +5,63 @@ const prevSong = document.querySelector('.previous');
 const currentTime = document.getElementById('current-time');
 const durationMusic = document.getElementById('duration');
 
+const songs = [
+    {
+        title: 'Forest Lullaby',
+        author: 'Lesfim',
+        cover: 'assets/images/cover-1.jpg',
+        file: 'assets/sound/forest-lullaby-110624.mp3'
+    },
+    {
+        title: 'Lost in City Lights',
+        author: 'Cosmo Sheldrake',
+        cover: 'assets/images/cover-2.jpg',
+        file: 'assets/sound/lost-in-city-lights-145038.mp3'
+    }
+];
+
+let songIndex = 0;
+
+function loadSong(song){
+
+    const titleDisplay = document.querySelector('.title');
+    const authorDisplay = document.querySelector('.author');
+    const coverDisplay = document.querySelector('.cover');
+
+    titleDisplay.textContent = song.title;
+    authorDisplay.textContent = song.author;
+    coverDisplay.src = song.cover;
+    audio.src = song.file;
+
+}
+
+nextSong.addEventListener('click', ()=>{
+    songIndex++;
+
+    if(songIndex > songs.length - 1){
+        songIndex = 0;
+    }
+
+    loadSong(songs[songIndex]);
+    playMusic();
+
+})
+
+prevSong.addEventListener('click',()=>{
+    songIndex--;
+
+    if(songIndex<0){
+        songIndex = songs.length -1;
+    }
+
+    loadSong(songs[songIndex]);
+    playMusic();
+
+})
+
+
 
 let isPlaying = false;
-
 
 function togglePlay(){
     if(isPlaying){
@@ -58,3 +112,6 @@ audio.addEventListener('loadedmetadata', ()=>{
     const seconds = Math.floor(audio.duration % 60);
     durationMusic.textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`;
 })
+
+
+loadSong(songs[songIndex]);
