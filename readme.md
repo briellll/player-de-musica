@@ -3,6 +3,7 @@
 
 Este é um projeto de um reprodutor de música responsivo, desenvolvido como parte da minha migração para o desenvolvimento Full Stack. O foco principal foi o domínio de manipulação de DOM, gerenciamento de estados com JavaScript e estilização com CSS.
 
+<img width="774" height="758" alt="{029D1313-B289-486F-AACA-4B85EB2A0BF6}" src="https://github.com/user-attachments/assets/75cb7dea-befe-453d-9b15-96f38da0b17a" />
 
 
 ## 🚀 Tecnologias Utilizadas
